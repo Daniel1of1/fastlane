@@ -1274,6 +1274,7 @@ module Spaceship
         def get_review_rejection(filter: {}, includes: nil)
           params = tunes_request_client.build_params(filter: filter, includes: includes)
           tunes_request_client.get("reviewRejections", params)
+        end
         # appClips
         #
 
